@@ -7,3 +7,7 @@
 
 ## listDir.php
 - 1.遍历某个目录下的全部文件
+
+
+## Tools.php
+- 1._getMillisecond获取PHP毫秒数
