@@ -11,3 +11,4 @@
 
 ## Tools.php
 - 1._getMillisecond获取PHP毫秒数
+- 2._unsetData删除多余的数据
