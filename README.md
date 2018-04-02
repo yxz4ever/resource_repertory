@@ -10,5 +10,7 @@
 
 
 ## Tools.php
-- 1._getMillisecond获取PHP毫秒数
-- 2._unsetData删除多余的数据
+- 1._getMillisecond 获取PHP毫秒数
+- 2._unsetData 删除多余的数据
+- 3._FilterData 筛选数据
+- 4._RecordsFile 记录文件
