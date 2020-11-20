@@ -1,0 +1,14 @@
+{
+  "name": "vendor_name/resource_repertory",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "luo",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+  }
+}
