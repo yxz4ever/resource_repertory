@@ -30,12 +30,14 @@ class Tools {
         }
         return $aData;
     }
-    
+
     /**
      * 筛选数据
-     * @param type $subject
-     * @param type $select
-     * @author 氷落
+     *
+     * @param      $aData
+     * @param array $select
+     * @return array
+     * @author       氷落
      * @create_time  2018-01-10 15:15:27
      */
     public static function _FilterData($aData,$select) {
