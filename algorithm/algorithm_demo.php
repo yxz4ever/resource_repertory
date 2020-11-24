@@ -14,7 +14,7 @@ $aInteger = [2, 3, 4, 9, 8, 7, 5, 6, 11, 13, 14, 16, 18, 12, 1];
 // echo "\n";
 
 
-$sort = mergeSort($aInteger);
+$sort = countingSort($aInteger);
 
 print_r($sort);
 
@@ -227,6 +227,37 @@ function mergeArr($leftArr,$rightArr){
     }
     return $returnArr;
 }
+
+
+/**
+ * 计数排列
+ * 原理:
+ *  1. 先最大数值,声明一个有序计数数组
+ *  2. 遍历数组,计数每个数值出现的次数
+ *  3. 遍历计数数组,
+ */
+function countingSort($arr){
+    $bucket = [];
+
+    // 强制声明一个数组,用于存放计数器
+    for ($i = 0;$i<=max($arr);$i++) {
+        $bucket[$i] = 0;
+    }
+
+
+    foreach ($arr as $value) {
+        $bucket[$value]++;
+    }
+
+    $resultArr = [];
+    foreach ($bucket as $key => $value) {
+        for ($i = 0;$i<$value;$i++) {
+            $resultArr[] = $key;
+        }
+    }
+    return $resultArr;
+}
+
 
 
 
